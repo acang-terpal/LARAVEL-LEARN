@@ -7,6 +7,8 @@ use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\ScrumBoardController;
 use App\Http\Controllers\SnippetsController;
+use App\Http\Controllers\UserProfileController;
+use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,3 +33,15 @@ Route::get('/page_invoices', [InvoiceController::class, 'getPage']);
 Route::get('/page_chat', [ChatController::class, 'getPage']);
 Route::get('/page_scrum_board', [ScrumBoardController::class, 'getPage']);
 Route::get('/page_snippets', [SnippetsController::class, 'getPage']);
+Route::get('/page_user_profile', [UserProfileController::class, 'getPage']);
+Route::get('/page_user_edit', [UserProfileController::class, 'getUserEditPage']);
+Route::get('/forms_regular', [FormController::class, 'getFormRegularPage']);
+Route::get('/forms_advanced', [FormController::class, 'getFormAdvancePage']);
+Route::get('/forms_dynamic', [FormController::class, 'getFormDynamicPage']);
+Route::get('/forms_file_input', [FormController::class, 'getFormFileinputPage']);
+Route::get('/forms_file_upload', [FormController::class, 'getFormFileUploadPage']);
+Route::get('/forms_validation', [FormController::class, 'getFormValidationPage']);
+Route::get('/forms_wizard', [FormController::class, 'getFormWizardPage']);
+Route::get('/forms_wysiwyg_ckeditor', [FormController::class, 'getWysiwygCkeditorPage']);
+Route::get('/forms_wysiwyg_inline', [FormController::class, 'getWysiwygInlinePage']);
+Route::get('/forms_wysiwyg_tinymce', [FormController::class, 'getWysiwygTinymcePage']);
