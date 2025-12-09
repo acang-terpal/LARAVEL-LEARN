@@ -3,6 +3,7 @@
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\MailBoxController;
+use App\Http\Controllers\InvoiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [LoginController::class, 'getLoginPage']);
 Route::get('/index', [IndexController::class, 'getIndexPage']);
 Route::get('/mailbox', [MailBoxController::class, 'getPage']);
+Route::get('/page_invoices', [InvoiceController::class, 'getPage']);
