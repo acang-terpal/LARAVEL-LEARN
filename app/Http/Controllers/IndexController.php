@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function getIndexPage(){
-        return view('index');
+        return view('index',["activeSidebarMain" => "dashboard"]);
     }
 }

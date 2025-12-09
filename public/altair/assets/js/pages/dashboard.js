@@ -42,7 +42,7 @@ altair_dashboard = {
 
                 var $thisEl_width = $(mGraph_sale).width();
 
-                d3.json("data/mg_dashboard_chart.min.json", function (data) {
+                d3.json("altair/data/mg_dashboard_chart.min.json", function (data) {
                     data = [data];
                     for (var i = 0; i < data.length; i++) {
                         data[i] = MG.convert.date(data[i], 'date');
@@ -175,7 +175,7 @@ altair_dashboard = {
                         "stylers": [{"visibility": "off"}]
                     }]
                 },
-                marker_url = isHighDensity() ? 'assets/img/md-images/ic_location_history_black_48dp.png' : 'assets/img/md-images/ic_location_history_black_24dp.png',
+                marker_url = isHighDensity() ? 'altair/assets/img/md-images/ic_location_history_black_48dp.png' : 'altair/assets/img/md-images/ic_location_history_black_24dp.png',
                 marker_size = isHighDensity() ? new google.maps.Size(48, 48) : new google.maps.Size(24, 24),
                 marker_scaled_size = new google.maps.Size(24, 24),
                 marker_zoom = 14,

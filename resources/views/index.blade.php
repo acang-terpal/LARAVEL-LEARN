@@ -883,7 +883,7 @@
         <!-- d3 -->
         <script src="altair/bower_components/d3/d3.min.js"></script>
         <!-- metrics graphics (charts) -->
-        <script src="altair/bower_components/metrics-graphics/dist/metricsgraphics.min.js"></script>
+        <script src="altair/bower_components/metrics-graphics/dist/metricsgraphics.js"></script>
         <!-- chartist (charts) -->
         <script src="altair/bower_components/chartist/dist/chartist.min.js"></script>
         <!-- maplace (google maps) -->
@@ -904,7 +904,7 @@
         <script src="altair/bower_components/fitvids/jquery.fitvids.js"></script>
 
         <!--  dashbord functions -->
-        <script src="altair/assets/js/pages/dashboard.min.js"></script>
+        <script src="altair/assets/js/pages/dashboard.js"></script>
 
         <script>
             $(function () {
