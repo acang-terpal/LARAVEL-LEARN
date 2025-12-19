@@ -247,7 +247,7 @@ $(selector).kendoCalendar();</code></pre>
                     localStorage.setItem("altair_theme", this_theme);
                     if (this_theme == 'app_theme_dark') {
                         $('#kendoCSS').attr('href',
-                            'altair/altair/altair/bower_components/kendo-ui/styles/kendo.materialblack.min.css')
+                            'altair/bower_components/kendo-ui/styles/kendo.materialblack.min.css')
                     }
                 }
 

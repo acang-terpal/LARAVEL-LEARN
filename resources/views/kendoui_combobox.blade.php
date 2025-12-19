@@ -351,7 +351,7 @@ if($kUI_combobox_cascade_a.length && $kUI_combobox_cascade_b.length && $kUI_comb
                     localStorage.setItem("altair_theme", this_theme);
                     if (this_theme == 'app_theme_dark') {
                         $('#kendoCSS').attr('href',
-                            'altair/altair/altair/altair/altair/bower_components/kendo-ui/styles/kendo.materialblack.min.css'
+                            'altair/bower_components/kendo-ui/styles/kendo.materialblack.min.css'
                             )
                     }
                 }
