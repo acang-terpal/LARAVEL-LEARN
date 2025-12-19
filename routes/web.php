@@ -58,4 +58,5 @@ Route::group([
     Route::get('/kendoui_autocomplete', [KendouiController::class, 'getKendouiAutocompletePage']);
     Route::get('/kendoui_calendar', [KendouiController::class, 'getKendouiCalendar']);
     Route::get('/kendoui_colorpicker', [KendouiController::class, 'getKendouiColorPicker']);
+    Route::get('/kendoui_combobox', [KendouiController::class, 'getKendouiCombobox']);
 });

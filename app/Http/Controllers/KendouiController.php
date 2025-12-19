@@ -17,4 +17,8 @@ class KendouiController extends Controller
     public function getKendouiColorPicker(){
         return view('kendoui_colorpicker',["activeSidebarMain" => "kendoui_colorpicker", "bodyClass" => "sidebar_main_open sidebar_main_swipe"]);
     }
+    
+    public function getKendouiCombobox(){
+        return view('kendoui_combobox',["activeSidebarMain" => "kendoui_combobox", "bodyClass" => "sidebar_main_open sidebar_main_swipe"]);
+    }
 }
