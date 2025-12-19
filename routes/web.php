@@ -11,6 +11,7 @@ use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\LayoutController;
 use App\Http\Controllers\KendouiController;
+use App\Http\Controllers\ComponentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -68,5 +69,5 @@ Route::group([
     Route::get('/kendoui_panelbar', [KendouiController::class, 'getKendouiPanelBar']);
     Route::get('/kendoui_timepicker', [KendouiController::class, 'getKendouiTimePicker']);
     Route::get('/kendoui_toolbar', [KendouiController::class, 'getKendouiToolbar']);
-    Route::get('/kendoui_window', [KendouiController::class, 'getKendouiWindow']);
+    Route::get('/components_accordion', [ComponentController::class, 'getComponentAccordion']);
 });
