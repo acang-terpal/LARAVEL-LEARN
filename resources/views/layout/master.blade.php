@@ -3,6 +3,7 @@
 <!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
 
     <head>
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         @yield("head")
 
     </head>

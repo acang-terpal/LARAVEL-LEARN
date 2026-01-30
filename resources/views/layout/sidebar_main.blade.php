@@ -30,6 +30,12 @@
                     <span class="menu_title">Dashboard</span>
                 </a>
             </li>
+            <li title="SpreedSheet" class="{{ $activeSidebarMain == "spreedsheet" ? "current_section" : ""}}" >
+                <a href="spreedsheet">
+                    <span class="menu_icon"><i class="material-icons">&#xE158;</i></span>
+                    <span class="menu_title">SpreedSheet</span>
+                </a>
+            </li>
             <li title="Mailbox" class="{{ $activeSidebarMain == "mailbox" ? "current_section" : ""}}" >
                 <a href="mailbox">
                     <span class="menu_icon"><i class="material-icons">&#xE158;</i></span>

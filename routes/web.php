@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\SpreedSheetController;
 use App\Http\Controllers\MailBoxController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\ChatController;
@@ -37,6 +38,8 @@ Route::group([
     'middleware' => ['role:admin']
 ], function () {
     Route::get('/index', [IndexController::class, 'getPage'])->name('index');
+    Route::get('/spreedsheet', [SpreedSheetController::class, 'getPage']);
+    Route::post('/spreedsheet/formulaCalculator', [SpreedSheetController::class, 'formulaCalculator']);
     Route::get('/mailbox', [MailBoxController::class, 'getPage']);
     Route::get('/page_invoices', [InvoiceController::class, 'getPage']);
     Route::get('/page_chat', [ChatController::class, 'getPage']);

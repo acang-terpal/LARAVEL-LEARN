@@ -78,6 +78,19 @@ return [
             'sslmode' => 'prefer',
         ],
 
+        'pgsql_second' => [
+            'driver' => 'pgsql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_SECOND_HOST', '127.0.0.1'),
+            'port' => env('DB_SECOND_PORT', '5432'),
+            'database' => env('DB_SECOND_DATABASE', 'forge'),
+            'username' => env('DB_SECOND_USERNAME', 'forge'),
+            'password' => env('DB_SECOND_PASSWORD', ''),
+            'charset' => 'utf8',
+            'schema' => 'public',
+            'sslmode' => 'prefer',
+        ],
+
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),
