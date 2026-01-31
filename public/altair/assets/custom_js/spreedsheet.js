@@ -22,7 +22,7 @@ let NEGATIVE = function(v) {
 calcObj = {
     worksheet: "",
     datasource: [
-        ['', '2025', '=(A1 * 2)'],
+        ['' , '2025', '=(A1 * 2)'],
         [''],
         ['DMOO', 'Deviasi Kuantitas Impor Minyak Mentah untuk Feedstock Kilang dari Kuantitas yang Direkomendasikan', '=(A1 * 2)'],
         [''],
@@ -37,10 +37,12 @@ calcObj = {
         // Create spreadsheet
         formula.setFormula({NEGATIVE});
         calcObj.worksheet = jspreadsheet(document.getElementById('spreadsheet'), {
-            toolbar: false,
+            // toolbar: true,
             tempBeforeChange: "",
             worksheets: [{
                 data: calcObj.datasource,
+                worksheetName : 'test1',
+                worksheetId: '0',
                 columns: [
                     { type: 'text', width: 50 },
                     { type: 'text', width: 120, wordWrap: true },
@@ -62,6 +64,7 @@ calcObj = {
                 // console.log('New change on cell ' + cellName + ' from: ' + tempBeforeChange + ' to: ' + value);
             }
         })[0];
+        // console.log(calcObj.worksheet);
         calcObj.worksheet.setStyle({'B5': 'background-color: #827f7f;',
             'C5': 'background-color: #827f7f;',
             'D5': 'background-color: #827f7f;',

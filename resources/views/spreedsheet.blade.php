@@ -63,8 +63,10 @@
                 <div class="md-card-content">
                     <h3 class="heading_a">Excel</h3>
                     <div class="uk-grid" data-uk-grid-margin>
-                        <div class="uk-width-medium-1-1" id="spreadsheet">
+                        <div class="uk-width-medium-1-1">
+                            <div id="spreadsheet">
 
+                            </div>
                         </div>
                     </div>
                 </div>
